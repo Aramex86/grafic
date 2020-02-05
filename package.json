@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
-    "liveserver": "live-server",
+    "liveserver": "browser-sync",
     "start":"npm-run-all --parallel liveserver watch:sass"
   },
   "author": "Slava",

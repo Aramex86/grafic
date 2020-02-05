@@ -23,6 +23,10 @@
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
+        @include respond(tab-port){
+          left: 6px;
+          top: 2px;
+        }
         @include respond(phone){
           left: 6px;
           top: 2px;
