@@ -6,6 +6,14 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 3.4rem;
+    @include respond(tab-port){
+        justify-content: flex-end;
+        padding: 0;
+     }
+    @include respond(small-dev){
+        justify-content: flex-end;
+        padding: 0;
+     }
 
     &__regform{
         display: flex;
@@ -22,17 +30,29 @@
         @include respond(phone){
        flex-basis: 20%;
     }
+        @include respond(small-dev){
+       flex-basis: 41%;
+       font-weight: 900;
+       justify-content: flex-end;
+       margin-right: 10px;
+    }
         & a{
             text-decoration: none !important;
             color:$primery-color !important;
         }
         &__notificcations{
             position: relative;
+            @include respond(small-dev){
+                margin-right: 10px;
+             }
         }
         &__singout{
             display: flex;
             align-items: center;
             font-size: 1.3rem;
+            @include respond(small-dev){
+                font-size: 1.5rem;
+             }
         }
     }
    

@@ -1,0 +1,45 @@
+.show{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 5%;
+    top: 2%;
+    background: none;
+    border: none;
+    display: none;
+    @include respond(tab-port){
+        display: block;
+    }
+    & span{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: $btn-color;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 85%;
+            height: 2px;
+            background: $btn-color;
+            top: .7rem;
+            left: 0;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 85%;
+            height: 2px;
+            background: $btn-color;
+            top: -.6rem;
+            left: 0;
+        }
+
+    }
+}
+
+.showmenu{
+    transform: translate(0 ,0) !important;
+    
+}

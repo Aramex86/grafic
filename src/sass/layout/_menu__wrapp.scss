@@ -1,9 +1,18 @@
 .menu__wrapper{
     width: 20%;
     background: $primery-color;
-
-    //test 
-    display: none;
+    transition: all .5s ease-in;
+    @include respond(tab-port){
+    width: 35%;
+    position: absolute;
+    z-index: 1;
+    min-height: 100vh;
+    transform: translate(-100%, 0);
+    }
+    @include respond(phone){
+        width: 50%;
+    }
+   
     &-header{
         display: flex;
         justify-content: center;
