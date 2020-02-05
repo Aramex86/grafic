@@ -1,0 +1,17 @@
+.create-btn{
+    width: 15.4rem;
+    height: 3.5rem;
+    background:$btn-color;
+    border: none;
+    border-radius: 7px;
+    color:$primery-color;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    @include respond(tab-port){
+        height: 3.8rem;
+    }
+}

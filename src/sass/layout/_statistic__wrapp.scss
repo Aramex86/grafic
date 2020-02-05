@@ -1,0 +1,43 @@
+.statistic__wrapper{
+    width: 100%;
+    padding: 0px 5rem;
+    min-height: 88.5vh;
+    margin-top: 3rem;
+    @include respond(tab-port){
+        padding: 0 1rem;
+    }
+
+    &-header{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4.5rem;
+    }
+    &-data{
+        display: flex;
+        width: 35%;
+        justify-content: space-between;
+        align-items: center;
+        @include respond(tab-land){
+            width: 44%;
+        }
+        @include respond(tab-port){
+            width: 38%;
+        }
+        @include respond(phone){
+            width: 55%;
+        }
+
+        &-date{
+            position: relative;
+            font-size: 1.3rem;
+            font-weight: 900;
+            & span:nth-child(3){
+                font-size: 1.1rem;
+                color:#797c7f;
+            }
+        }
+        &-update{
+            font-size: 1.3rem;
+        }
+    }
+}

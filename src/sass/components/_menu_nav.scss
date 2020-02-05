@@ -1,0 +1,40 @@
+.menu__nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.3rem;
+   
+
+    &-list{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    &-item{
+        position: relative;
+        padding: 1rem 2rem;
+        &--active{
+            background:$aside-hover;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            height: 100%;
+            background:$aside-hover;
+            left: 0;
+            top: 0;
+        }
+        &:hover::before{
+            width: 100%;
+        }
+    }
+    &-link{
+        position: relative;
+        z-index: 1;
+        text-decoration: none !important;
+        color: $input-off !important;
+        text-transform: capitalize;
+    }
+}

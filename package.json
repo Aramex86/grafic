@@ -1,0 +1,18 @@
+{
+  "name": "webmaster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass src/sass/main.scss src/css/style.css -w",
+    "liveserver": "live-server",
+    "start":"npm-run-all --parallel liveserver watch:sass"
+  },
+  "author": "Slava",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "node-sass": "^4.13.1",
+    "npm-run-all": "^4.1.5"
+  }
+}

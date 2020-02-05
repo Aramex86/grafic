@@ -1,0 +1,13 @@
+.menu__wrapper{
+    width: 20%;
+    background: $primery-color;
+
+    //test 
+    display: none;
+    &-header{
+        display: flex;
+        justify-content: center;
+        padding:2.5rem 0;
+    }
+
+}

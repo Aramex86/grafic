@@ -1,0 +1,63 @@
+.header {
+    &__icon {
+        &-bell {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: $primery-color;
+        }
+
+        &-singout {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: $primery-color;
+            margin-right: 8px;
+        }
+    }
+}
+
+.menu__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 13px;
+    fill: $input-off;
+}
+
+.statistic__icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    &-dropdown{
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        right: -37px;
+        top: 0px;
+        @include respond(tab-port){
+            right: -27px;
+        }
+    }
+}
+
+.search__icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #7f7f7f;
+}
+
+.filter-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-weight: 900;
+    &-dropdown{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+}
+
+.create-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: $primery-color;
+    margin-right: 3px;
+    
+}

@@ -1,0 +1,81 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 4.7rem;
+    height: 2.2rem;
+    top: 10px;
+    left: 20px;
+    @include respond(tab-land){
+      left: 12px;
+      height: 2.3rem;
+    }
+  }
+
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eaeaea;
+    transition: .4s;
+  }
+  .slider::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 3px;
+    bottom: 2.5px;
+    background-color: $input-off;
+    -webkit-transition: .4s;
+    transition: .4s;
+    @include respond(tab-land){
+      bottom: 2px;
+    }
+    @include respond(tab-port){
+      bottom: 1px;
+    }
+    @include respond(phone){
+      bottom: 2px;
+      left: 1px;
+      top: 1.5px;
+    }
+  }
+
+  input:checked + .slider {
+    background-color: $btn-color;
+    border: none;
+  }
+
+  input:checked + .slider::before{
+      background-color: $primery-color;
+  }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    @include respond(tab-land){
+     transform: translateX(21px);
+    }
+  }
+
+  .slider.round {
+    border-radius: 34px;
+    border: .5px solid $input-off;
+  }
+
+  .slider.round::before {
+    border-radius: 50%;
+  }

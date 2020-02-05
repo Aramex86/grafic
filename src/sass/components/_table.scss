@@ -1,0 +1,71 @@
+.table__wrapp{
+    width: 100%;
+    margin-top: 20px;
+    background: $primery-color;
+    border: 2px solid #e6e6e6;
+    border-radius: 7px;
+
+    &-header{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1rem 0;
+        margin-right: 18px;
+    }
+}
+.table td{
+    position: relative!important;
+    @include respond(phone){
+       padding: 1.75rem!important;
+    }
+   
+} 
+
+
+
+
+.line{
+    width: 20px;
+    height: 2px;
+    background: #808080e3;
+    position: absolute;
+    top: 17px;
+    left: 0;
+    @include respond(tab-land){
+        left: 27px;
+      }
+}
+
+.subtext{
+    font-size: 1.1rem;
+    color: #a4a4a4;
+}
+
+.inactive{
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background: $input-off;
+        left: -10px;
+        top: 9px;
+        border-radius: 50%;
+        @include respond(tab-port){
+            top: 6px;
+          }
+    }
+}
+
+.branch-title{
+    font-weight: 500;
+}
+
+.camp-title{
+    color: #1684b0;
+    font-weight: 400;
+}
+
+.crunit{
+    text-align: center;
+}

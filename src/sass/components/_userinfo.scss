@@ -1,0 +1,33 @@
+.userinfo{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        background: #d9d9d9;
+        bottom: -15px;
+    }
+
+    &-userimg{
+        width: 28%;
+        border-radius: 50%;
+    }
+    &-username{
+        margin-top: 10px;
+        letter-spacing: 2px;
+        font-size: 1.6rem;
+        font-weight: 900;
+    }
+    &-userposition{
+        margin-top: 10px;
+        letter-spacing: 2px;
+         color:$input-off;
+         font-size: 1.2rem;
+    }
+}

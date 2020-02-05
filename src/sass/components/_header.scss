@@ -1,0 +1,39 @@
+.header{
+    min-height: 6.8rem;
+    background: $secondary-color;
+    color: $primery-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.4rem;
+
+    &__regform{
+        display: flex;
+        align-items: center;
+        flex-basis: 11%;
+        justify-content: space-evenly;
+        text-transform: uppercase;
+        @include respond(big-desktop){
+       flex-basis: 8%;
+    }
+        @include respond(tab-port){
+       flex-basis: 13%;
+    }
+        @include respond(phone){
+       flex-basis: 20%;
+    }
+        & a{
+            text-decoration: none !important;
+            color:$primery-color !important;
+        }
+        &__notificcations{
+            position: relative;
+        }
+        &__singout{
+            display: flex;
+            align-items: center;
+            font-size: 1.3rem;
+        }
+    }
+   
+}

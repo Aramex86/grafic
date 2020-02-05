@@ -1,0 +1,65 @@
+
+
+@mixin progresbar($size) {
+    width: $size;
+
+    @if $size {
+        background-image: $progres-red; 
+        width: $size * 2;
+    }
+}
+@mixin progresbar1($size) {
+    width: $size;
+
+    @if $size {
+        background-image: $progres-orange;
+        width: $size * 2;
+    }
+}
+@mixin progresbar2($size) {
+    width: $size;
+
+    @if $size {
+        background-image: $progres-green;
+        width: $size * 2;
+    }
+}
+
+//Media Query manager
+
+/*
+0-600  -> phone
+600-900 -> Tablet portrait
+900-1200 -> Tablet landscape
+[1200 - 1800] normal styles apply
+1800+ Big screen
+*/
+
+
+/*$breakepoint choise
+-small-dev
+-phone
+-tab-port
+-tab-land
+-big-desktop 
+*/
+
+/* 1em = 16px*/
+@mixin respond($breakepoint){
+	@if $breakepoint == small-dev{
+		@media (max-width: 22.5em){@content}; //360/16px = 22.5em
+	}
+
+	@if $breakepoint == phone{
+		@media (max-width: 42.62em){@content}; //650/16px = 37.5em
+	}
+	@if $breakepoint == tab-port{
+		@media (max-width: 56.25em){@content}; //900/16 = 56.25em
+	}
+	@if $breakepoint == tab-land{
+		@media (max-width: 75em){@content}; //1200 / 16 = 75em
+	}
+	@if $breakepoint == big-desktop{
+		@media (min-width: 112.5em){@content}; //1800 / 16 = 112.5em
+	}
+}

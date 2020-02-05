@@ -1,0 +1,26 @@
+.search{
+    margin-top: 25px;
+    position: relative;
+    &__input{
+        height: 35px;
+        width: 100%;
+        padding-left: 25px;
+        border: 2px solid #e6e6e6;
+        border-radius: 7px;
+        &::placeholder{
+            font-weight: 700;
+            color:#7f7f7f;
+        }
+    }
+    &__btn{
+        position: absolute;
+        top: 4px;
+        background: none;
+        border: none;
+        left: 6px;
+        outline: none;
+        @include respond(tab-port){
+           top: 7px;
+        }
+    }
+}
