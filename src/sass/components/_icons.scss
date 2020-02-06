@@ -16,10 +16,14 @@
 }
 
 .menu__icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     margin-right: 13px;
     fill: $input-off;
+    &-arrow{
+       position: absolute;
+       right: 0;
+    }
 }
 
 .statistic__icon{

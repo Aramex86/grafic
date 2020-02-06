@@ -72,25 +72,37 @@
                                 <use xlink:href="src/img/sprite.svg#icon-user-solid-square"></use>
                             </svg>
                             admin users
-                        </a></li>
+                        </a>
+                        <svg class="menu__icon menu__icon-arrow">
+                            <use xlink:href="src/img/sprite.svg#icon-keyboard_arrow_down"></use>
+                        </svg></li>
                     <li class="menu__nav-item"><a href="#" class="menu__nav-link">
                             <svg class="menu__icon menu__icon-suppliers">
                                 <use xlink:href="src/img/sprite.svg#icon-user"></use>
                             </svg>
                             suppliers
-                        </a></li>
+                        </a>
+                        <svg class="menu__icon menu__icon-arrow">
+                            <use xlink:href="src/img/sprite.svg#icon-keyboard_arrow_down"></use>
+                        </svg></li>
                     <li class="menu__nav-item"><a href="#" class="menu__nav-link">
                             <svg class="menu__icon menu__icon-data">
                                 <use xlink:href="src/img/sprite.svg#icon-chart"></use>
                             </svg>
                             data hub
-                        </a></li>
+                        </a>
+                        <svg class="menu__icon menu__icon-arrow">
+                            <use xlink:href="src/img/sprite.svg#icon-keyboard_arrow_down"></use>
+                        </svg></li>
                     <li class="menu__nav-item"><a href="#" class="menu__nav-link">
                             <svg class="menu__icon menu__icon-cost">
                                 <use xlink:href="src/img/sprite.svg#icon-money-bag"></use>
                             </svg>
                             cost & taxes
-                        </a></li>
+                        </a>
+                        <svg class="menu__icon menu__icon-arrow">
+                            <use xlink:href="src/img/sprite.svg#icon-keyboard_arrow_down"></use>
+                        </svg></li>
                     <li class="menu__nav-item"><a href="#" class="menu__nav-link">
                             <svg class="menu__icon menu__icon-report">
                                 <use xlink:href="src/img/sprite.svg#icon-report"></use>
@@ -129,304 +141,319 @@
                         </div>
                     </div>
                 </div>
-            
-            <form action="#" class="search">
-                <input class="search__input" type="text" placeholder="Search for a campaing">
-                <button class="search__btn">
-                    <svg class="search__icon">
-                        <use xlink:href="src/img/sprite.svg#icon-search"></use>
-                    </svg>
-                </button>
-            </form>
-            <div class="table__wrapp">
-                <div class="table__wrapp-header">
-                    <button class="filter-btn">
-                        <svg class="filter-icon">
-                            <use xlink:href="src/img/sprite.svg#icon-filter_list"></use>
-                        </svg>
-                        Filter
-                        <svg class="filter-icon filter-icon-dropdown">
-                            <use xlink:href="src/img/sprite.svg#icon-arrow_drop_down"></use>
+
+                <form action="#" class="search">
+                    <input class="search__input" type="text" placeholder="Search for a campaing">
+                    <button class="search__btn">
+                        <svg class="search__icon">
+                            <use xlink:href="src/img/sprite.svg#icon-search"></use>
                         </svg>
                     </button>
-                    <button class="create-btn">
-                        <svg class="create-icon">
-                            <use xlink:href="src/img/sprite.svg#icon-add-solid"></use>
-                        </svg>
-                        Create Campaing
-                    </button>
-                </div>
-            
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">
-                                    <label class="checkbox__container checkbox__container--head">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </th>
-                                <th scope="col"></th>
-                                <th scope="col">Brench</th>
-                                <th scope="col">Campaing Name</th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Start</th>
-                                <th scope="col">End</th>
-                                <th scope="col">Target</th>
-                                <th scope="col">Result</th>
-                                <th scope="col">Budget</th>
-                                <th scope="col">Spent</th>
-                                <th scope="col">Cr/Unit</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <!-- <th scope="row">1</th> -->
-                                <td>
-                                    <label class="checkbox__container">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </td>
-                                <td>
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <td class="branch-title">Electrabel
-                                    <br>
-                                    <span class="subtext">Electricity</span>
-                                </td>
-                                <td class="camp-title">BE-Summer Deal Elec</td>
-                                <td><span class="inactive">Inactive</span></td>
-                                <td>14/07/2019 <br>00:00</td>
-                                <td>21/07/2019 <br>00:00</td>
-                                <td>1000</td>
-                                <td>
-                                    <div class="progres__bar"></div><br><span class="percent">0%</span>
-                                </td>
-                                <td>30,000</td>
-                                <td>
-                                    <div class="progres__bar"></div><br><span class="percent">0%</span>
-                                </td>
-                                <td class="crunit">
-                                    <div class="line"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <label class="checkbox__container">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </td>
-                                <td>
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <td class="branch-title">Electrabel
-                                    <br>
-                                    <span class="subtext">Electricity</span>
-                                </td>
-                                <td class="camp-title">FR-Summer Deal Elec</td>
-                                <td><span class="inactive">Inactive</span></td>
-                                <td>14/07/2019 <br>00:00</td>
-                                <td>21/07/2019 <br>00:00</td>
-                                <td>1000</td>
-                                <td>
-                                    <div class="progres__bar progres__bar-orange"></div><br><span
-                                        class="percent">49%</span>
-                                </td>
-                                <td>30,000</td>
-                                <td>
-                                    <div class="progres__bar progres__bar-orange"></div><br><span
-                                        class="percent">52%</span>
-                                </td>
-                                <td class="crunit">20</td>
-                            </tr>
-                            <tr>
-                                <!-- <th scope="row">1</th> -->
-                                <td>
-                                    <label class="checkbox__container">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </td>
-                                <td>
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <td class="branch-title">GDF
-                                    <br>
-                                    <span class="subtext">Electricity</span>
-                                </td>
-                                <td class="camp-title">BE-June Base Promo GAS</td>
-                                <td><span class="inactive">Inactive</span></td>
-                                <td>14/07/2019 <br>00:00</td>
-                                <td>21/07/2019 <br>00:00</td>
-                                <td>1000</td>
-                                <td>
-                                    <div class="progres__bar"></div><br><span class="percent">0%</span>
-                                </td>
-                                <td>10,000</td>
-                                <td>
-                                    <div class="progres__bar"></div><br><span class="percent">0%</span>
-                                </td>
-                                <td class="crunit">30</td>
-                            </tr>
-                            <tr>
-                                <!-- <th scope="row">1</th> -->
-                                <td>
-                                    <label class="checkbox__container">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </td>
-                                <td>
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <td class="branch-title">GDF
-                                    <br>
-                                    <span class="subtext">Electricity</span>
-                                </td>
-                                <td class="camp-title">FR-June Base Promo GAS</td>
-                                <td><span class="inactive">Inactive</span></td>
-                                <td>14/07/2019 <br>00:00</td>
-                                <td>21/07/2019 <br>00:00</td>
-                                <td>1000</td>
-                                <td>
-                                    <div class="progres__bar progres__bar-red"></div><br><span
-                                        class="percent">21%</span>
-                                </td>
-                                <td>20,000</td>
-                                <td>
-                                    <div class="progres__bar progres__bar-green"></div><br><span
-                                        class="percent">78%</span>
-                                </td>
-                                <td class="crunit">
-                                    <div class="line"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <!-- <th scope="row">1</th> -->
-                                <td>
-                                    <label class="checkbox__container">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </td>
-                                <td>
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <td class="branch-title">ENGIE
-                                    <br>
-                                    <span class="subtext">Electricity</span>
-                                </td>
-                                <td class="camp-title">BE-July Deal Elec</td>
-                                <td><span class="inactive">Inactive</span></td>
-                                <td>14/07/2019 <br>00:00</td>
-                                <td>21/07/2019 <br>00:00</td>
-                                <td>1000</td>
-                                <td>
-                                    <div class="progres__bar"></div><br><span class="percent">0%</span>
-                                </td>
-                                <td>30,000</td>
-                                <td>
-                                    <div class="progres__bar"></div><br><span class="percent">0%</span>
-                                </td>
-                                <td class="crunit">15</td>
-                            </tr>
-                            <tr>
-                                <!-- <th scope="row">1</th> -->
-                                <td>
-                                    <label class="checkbox__container">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </td>
-                                <td>
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <td class="branch-title">ENGIE
-                                    <br>
-                                    <span class="subtext">Electricity</span>
-                                </td>
-                                <td class="camp-title">FR-July Deal Elec</td>
-                                <td><span class="inactive">Inactive</span></td>
-                                <td>14/07/2019 <br>00:00</td>
-                                <td>21/07/2019 <br>00:00</td>
-                                <td>1000</td>
-                                <td>
-                                    <div class="progres__bar progres__bar-green"></div><br><span
-                                        class="percent">85%</span>
-                                </td>
-                                <td>15,000</td>
-                                <td>
-                                    <div class="progres__bar progres__bar-red"></div><br><span
-                                        class="percent">29%</span>
-                                </td>
-                                <td class="crunit">
-                                    <div class="line"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <!-- <th scope="row">1</th> -->
-                                <td>
-                                    <label class="checkbox__container">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </td>
-                                <td>
-                                    <label class="switch">
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </td>
-                                <td class="branch-title">EDF
-                                    <br>
-                                    <span class="subtext">Electricity</span>
-                                </td>
-                                <td class="camp-title">BE-Summer Deal Elec</td>
-                                <td><span class="inactive">Inactive</span></td>
-                                <td>14/07/2019 <br>00:00</td>
-                                <td>21/07/2019 <br>00:00</td>
-                                <td>1000</td>
-                                <td>
-                                    <div class="progres__bar progres__bar-orange"></div><br><span
-                                        class="percent">58%</span>
-                                </td>
-                                <td>30,000</td>
-                                <td>
-                                    <div class="progres__bar progres__bar-red"></div><br><span
-                                        class="percent">13%</span>
-                                </td>
-                                <td class="crunit">50</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                </form>
+                <div class="table__wrapp">
+                    <div class="table__wrapp-header">
+                        <button class="filter-btn">
+                            <svg class="filter-icon">
+                                <use xlink:href="src/img/sprite.svg#icon-filter_list"></use>
+                            </svg>
+                            Filter
+                            <svg class="filter-icon filter-icon-dropdown">
+                                <use xlink:href="src/img/sprite.svg#icon-arrow_drop_down"></use>
+                            </svg>
+                        </button>
+                        <button class="create-btn">
+                            <svg class="create-icon">
+                                <use xlink:href="src/img/sprite.svg#icon-add-solid"></use>
+                            </svg>
+                            Create Campaing
+                        </button>
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <label class="checkbox__container checkbox__container--head">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </th>
+                                    <th scope="col"></th>
+                                    <th scope="col">Brench</th>
+                                    <th scope="col">Campaing Name</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Start</th>
+                                    <th scope="col">End</th>
+                                    <th scope="col">Target</th>
+                                    <th scope="col">Result</th>
+                                    <th scope="col">Budget</th>
+                                    <th scope="col">Spent</th>
+                                    <th scope="col">Cr/Unit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <!-- <th scope="row">1</th> -->
+                                    <td>
+                                        <label class="checkbox__container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </td>
+                                    <td class="branch-title">Electrabel
+                                        <br>
+                                        <span class="subtext">Electricity</span>
+                                    </td>
+                                    <td class="camp-title">BE-Summer Deal Elec</td>
+                                    <td><span class="inactive">Inactive</span></td>
+                                    <td>14/07/2019 <br>00:00</td>
+                                    <td>21/07/2019 <br>00:00</td>
+                                    <td>1000</td>
+                                    <td>
+                                        <div class="progres__bar"></div><br><span class="percent">0%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td>30,000</td>
+                                    <td>
+                                        <div class="progres__bar"></div><br><span class="percent">0%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td class="crunit">
+                                        <div class="line"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label class="checkbox__container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </td>
+                                    <td class="branch-title">Electrabel
+                                        <br>
+                                        <span class="subtext">Electricity</span>
+                                    </td>
+                                    <td class="camp-title">FR-Summer Deal Elec</td>
+                                    <td><span class="inactive">Inactive</span></td>
+                                    <td>14/07/2019 <br>00:00</td>
+                                    <td>21/07/2019 <br>00:00</td>
+                                    <td>1000</td>
+                                    <td>
+                                        <div class="progres__bar progres__bar-orange"></div><br><span
+                                            class="percent">49%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td>30,000</td>
+                                    <td>
+                                        <div class="progres__bar progres__bar-orange"></div><br><span
+                                            class="percent">52%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td class="crunit">20</td>
+                                </tr>
+                                <tr>
+                                    <!-- <th scope="row">1</th> -->
+                                    <td>
+                                        <label class="checkbox__container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </td>
+                                    <td class="branch-title">GDF
+                                        <br>
+                                        <span class="subtext">Electricity</span>
+                                    </td>
+                                    <td class="camp-title">BE-June Base Promo GAS</td>
+                                    <td><span class="inactive">Inactive</span></td>
+                                    <td>14/07/2019 <br>00:00</td>
+                                    <td>21/07/2019 <br>00:00</td>
+                                    <td>1000</td>
+                                    <td>
+                                        <div class="progres__bar"></div><br><span class="percent">0%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td>10,000</td>
+                                    <td>
+                                        <div class="progres__bar"></div><br><span class="percent">0%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td class="crunit">30</td>
+                                </tr>
+                                <tr>
+                                    <!-- <th scope="row">1</th> -->
+                                    <td>
+                                        <label class="checkbox__container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </td>
+                                    <td class="branch-title">GDF
+                                        <br>
+                                        <span class="subtext">Electricity</span>
+                                    </td>
+                                    <td class="camp-title">FR-June Base Promo GAS</td>
+                                    <td><span class="inactive">Inactive</span></td>
+                                    <td>14/07/2019 <br>00:00</td>
+                                    <td>21/07/2019 <br>00:00</td>
+                                    <td>1000</td>
+                                    <td>
+                                        <div class="progres__bar progres__bar-red"></div><br><span
+                                            class="percent">21%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td>20,000</td>
+                                    <td>
+                                        <div class="progres__bar progres__bar-green"></div><br><span
+                                            class="percent">78%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td class="crunit">
+                                        <div class="line"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- <th scope="row">1</th> -->
+                                    <td>
+                                        <label class="checkbox__container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </td>
+                                    <td class="branch-title">ENGIE
+                                        <br>
+                                        <span class="subtext">Electricity</span>
+                                    </td>
+                                    <td class="camp-title">BE-July Deal Elec</td>
+                                    <td><span class="inactive">Inactive</span></td>
+                                    <td>14/07/2019 <br>00:00</td>
+                                    <td>21/07/2019 <br>00:00</td>
+                                    <td>1000</td>
+                                    <td>
+                                        <div class="progres__bar"></div><br><span class="percent">0%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td>30,000</td>
+                                    <td>
+                                        <div class="progres__bar"></div><br><span class="percent">0%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td class="crunit">15</td>
+                                </tr>
+                                <tr>
+                                    <!-- <th scope="row">1</th> -->
+                                    <td>
+                                        <label class="checkbox__container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </td>
+                                    <td class="branch-title">ENGIE
+                                        <br>
+                                        <span class="subtext">Electricity</span>
+                                    </td>
+                                    <td class="camp-title">FR-July Deal Elec</td>
+                                    <td><span class="inactive">Inactive</span></td>
+                                    <td>14/07/2019 <br>00:00</td>
+                                    <td>21/07/2019 <br>00:00</td>
+                                    <td>1000</td>
+                                    <td>
+                                        <div class="progres__bar progres__bar-green"></div><br><span
+                                            class="percent">85%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td>15,000</td>
+                                    <td>
+                                        <div class="progres__bar progres__bar-red"></div><br><span
+                                            class="percent">29%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td class="crunit">
+                                        <div class="line"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <!-- <th scope="row">1</th> -->
+                                    <td>
+                                        <label class="checkbox__container">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </td>
+                                    <td class="branch-title">EDF
+                                        <br>
+                                        <span class="subtext">Electricity</span>
+                                    </td>
+                                    <td class="camp-title">BE-Summer Deal Elec</td>
+                                    <td><span class="inactive">Inactive</span></td>
+                                    <td>14/07/2019 <br>00:00</td>
+                                    <td>21/07/2019 <br>00:00</td>
+                                    <td>1000</td>
+                                    <td>
+                                        <div class="progres__bar progres__bar-orange"></div><br><span
+                                            class="percent">58%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td>30,000</td>
+                                    <td>
+                                        <div class="progres__bar progres__bar-red"></div><br><span
+                                            class="percent">13%</span>
+                                        <span class="label"></span>
+                                    </td>
+                                    <td class="crunit">50</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <script src="src/js/code.js"></script>
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
@@ -436,6 +463,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    <script src="src/js/code.js"></script>
 </body>
 
 </html>

@@ -44,14 +44,41 @@
 
 .inactive{
     position: relative;
+    transition: all .5s ease;
     &::before{
         content: "";
         position: absolute;
         width: 7px;
         height: 7px;
         background: $input-off;
-        left: -10px;
-        top: 9px;
+        left: -13px;
+        top: 7px;
+        border-radius: 50%;
+        @include respond(tab-port){
+            top: 6px;
+          }
+    }
+}
+
+.active{
+    position: relative;
+    transition: all .5s ease;
+    color: $btn-color;
+    & span{
+        font-size: 1rem;
+        color: #494949;
+        position: absolute;
+        left: -13px;
+        top: 15px;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        background: $btn-color;
+        left: -13px;
+        top: 7px;
         border-radius: 50%;
         @include respond(tab-port){
             top: 6px;

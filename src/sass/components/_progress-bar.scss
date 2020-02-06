@@ -7,6 +7,7 @@
     position: absolute;
     bottom: 37px;
     border-radius: 5px;
+    cursor: pointer;
     @include respond(tab-port){
         bottom: 30px;
     }
@@ -52,5 +53,42 @@
     display: block;
     @include respond(big-desktop){
         width: 51%;
+    }
+}
+
+.label{
+    width: 7rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    position: absolute;
+    border-radius: 7px;
+    left: 0;
+    bottom: 54px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 0;
+    transition: all .5s ease-in;
+    color: #fff;
+    @include respond(tab-port){
+        right: 4px;
+        bottom: 45px;
+    }
+    @include respond(phone){
+        left: -11px;
+        bottom: 87px;
+    }
+    &::before{
+        content: "";
+    width: 20px;
+    height: 20px;
+    background: $secondary-color;
+    clip-path: polygon(51% 37%, 0 0, 100% 0);
+    bottom: -16px;
+    left: 24px;
+    z-index: 5;
+    position: absolute;
     }
 }
