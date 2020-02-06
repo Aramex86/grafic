@@ -31,9 +31,16 @@
     background: #808080e3;
     position: absolute;
     top: 17px;
-    left: 0;
+    left: 40px;
+    @include respond(big-desktop){
+        left: 65px;
+    }
     @include respond(tab-land){
         left: 27px;
+      }
+      @include respond(phone){
+          left: 12px;
+          top: 20px;
       }
 }
 

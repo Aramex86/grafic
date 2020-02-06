@@ -310,10 +310,17 @@ button {
   background: #808080e3;
   position: absolute;
   top: 17px;
-  left: 0; }
+  left: 40px; }
+  @media (min-width: 112.5em) {
+    .line {
+      left: 65px; } }
   @media (max-width: 75em) {
     .line {
       left: 27px; } }
+  @media (max-width: 42.62em) {
+    .line {
+      left: 12px;
+      top: 20px; } }
 
 .subtext {
   font-size: 1.1rem;
@@ -371,10 +378,12 @@ button {
 .progres__bar {
   width: 5.3rem;
   height: 1.1rem;
-  background: #8080803d;
+  background: #ffffff3d;
   position: absolute;
   bottom: 37px;
   border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #7070706e;
   cursor: pointer; }
   @media (max-width: 56.25em) {
     .progres__bar {

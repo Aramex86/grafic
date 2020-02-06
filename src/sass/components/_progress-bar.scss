@@ -3,10 +3,12 @@
 .progres__bar{
     width: 5.3rem;
     height: 1.1rem;
-    background: #8080803d;
+    background: #ffffff3d;
     position: absolute;
     bottom: 37px;
     border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #7070706e;
     cursor: pointer;
     @include respond(tab-port){
         bottom: 30px;
