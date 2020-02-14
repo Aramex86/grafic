@@ -23,6 +23,12 @@
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
+        @include respond(big-desktop){
+            left: 9px;
+            top: 2px;
+            width: 7px;
+            height: 14px;
+        }
         @include respond(tab-port){
           left: 6px;
           top: 2px;

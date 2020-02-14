@@ -77,6 +77,9 @@
         position: absolute;
         left: -13px;
         top: 15px;
+        @include respond(big-desktop){
+            top:21px;
+        }
     }
     &::before{
         content: "";
